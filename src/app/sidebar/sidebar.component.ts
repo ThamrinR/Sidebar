@@ -15,12 +15,21 @@ export class SidebarComponent implements OnInit {
   faBuilding = faBuilding;
   faNewspaper = faNewspaper;
   faMoneyBillWave = faMoneyBillWave;
-
+  terbuka = false;
 
   constructor(
   ) { }
 
   ngOnInit(): void {
   }
-
+  bukaSidebar(){
+    var menuToggle = document.getElementById("wrapper")
+    if(this.terbuka){
+      menuToggle.classList.remove("toggled")
+      this.terbuka = false
+    }else{
+      menuToggle.classList.add("toggled")
+      this.terbuka = true
+    }
+  }
 }
