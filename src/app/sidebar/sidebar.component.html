@@ -1,0 +1,76 @@
+
+<nav class="navbar navbar-darkfixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <a class="navbar-brand col-md-2 ml-md-3" href="/sidebar">
+        <img src="../assets/tambakin-logo-only.png" width="40" height="40"alt="">
+      </a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="/login">Keluar</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid mt-5" >
+        <div class="col-md-8 d-none d-md-block"></div>
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="navbarToggleExternalContent">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <a class="nav-link active " href="../admin/user">
+                  <fa-icon [icon]="faUser" class="mr-3 ml-1" > </fa-icon>
+                  Akun
+                </a><li class="nav-item">
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../admin/pelanggan">
+                  <fa-icon [icon]="faAddressBook" class="mr-3 ml-1"></fa-icon>
+                  Pelanggan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <fa-icon [icon]="faBoxOpen" class="mr-2"></fa-icon>
+                Paket
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <fa-icon [icon]="faCartArrowDown"class="mr-2"></fa-icon>
+                 Komoditas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <fa-icon [icon]="faBuilding" class="mr-3"></fa-icon>
+                  Perusahaan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <fa-icon [icon]="faNewspaper" class="mr-2"></fa-icon>
+                  Artikel
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Laporan</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <fa-icon [icon]="faMoneyBillWave" class="mr-2"></fa-icon>
+                  Pembayaran
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </div>
+  </div>
+<router-outlet></router-outlet>
