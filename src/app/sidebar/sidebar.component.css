@@ -6,6 +6,15 @@ fa-icon {
 }
 .nav-link{
     padding: 15px 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    color: black;
+}
+.nav-link:first-child{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
 }
 #wrapper {
   overflow-x: hidden;
