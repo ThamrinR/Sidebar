@@ -10,6 +10,8 @@ export class LoginComponent implements OnInit {
   
 username;
 password;
+status;
+message;
   constructor(
     private router:Router
   ) { }

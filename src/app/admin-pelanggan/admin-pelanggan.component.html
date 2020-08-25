@@ -1,3 +1,31 @@
-<p>admin-pelanggan works!
-    <button>a</button>
-</p>
+<h5 class="text-center mt-2 ">Daftar Pelanggan</h5>
+<div class="padding bg-primary-dark admin-card">
+      <button class="btn btn-outline-green btn-square margin-bottom" [routerLink]="'/admin/user/add'">
+        <fa-icon [icon]="faPlus"></fa-icon>
+        Tambah
+      </button>
+      <table class="table text-black font-weight-normal">
+        <thead>
+          <tr class="text-center ">
+            <th scope="col">Nama Pelanggan</th>
+            <th scope="col">Jabatan</th>
+            <th scope="col">Perusahaan</th>
+            <th scope="col">Email/No.Telp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of akuns">
+            <td>{{data.username}}</td>
+            <td>{{data.hak_akses}}</td>
+            <td class="text-center">
+              <button class="btn btn-outline-warning btn-square btn-crud">
+                <fa-icon [icon]="faEdit"></fa-icon>
+              </button>
+              <button class="btn btn-outline-danger btn-square btn-crud" (click)="deleteUser(data.id_user)">
+                <fa-icon [icon]="faTrash"></fa-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

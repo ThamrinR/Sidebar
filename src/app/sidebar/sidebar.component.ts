@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faUser, faAddressBook, faBoxOpen, faCartArrowDown, faBuilding, faNewspaper, faMoneyBillWave} from '@fortawesome/free-solid-svg-icons';
+import {faUser, faAddressBook, faBoxOpen, faCartArrowDown, faBuilding, faNewspaper, faMoneyBillWave,faBars,faAngleDown} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -15,12 +15,23 @@ export class SidebarComponent implements OnInit {
   faBuilding = faBuilding;
   faNewspaper = faNewspaper;
   faMoneyBillWave = faMoneyBillWave;
-
+  faBars = faBars;
+  faAngleDown = faAngleDown;
+  terbuka = false;
 
   constructor(
   ) { }
 
   ngOnInit(): void {
   }
-
+  bukaSidebar(){
+    var menuToggle = document.getElementById("wrapper")
+    if(this.terbuka){
+      menuToggle.classList.remove("toggled")
+      this.terbuka = false
+    }else{
+      menuToggle.classList.add("toggled")
+      this.terbuka = true
+    }
+  }
 }

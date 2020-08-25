@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AdminUserComponent } from './admin-user/admin-user.component';
 import { AdminPelangganComponent } from './admin-pelanggan/admin-pelanggan.component';
+import { AdminPackageComponent } from './admin-package/admin-package.component';
+import { AdminKomoditasComponent } from './admin-komoditas/admin-komoditas.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { AdminPelangganComponent } from './admin-pelanggan/admin-pelanggan.compo
     LoginComponent,
     AdminUserComponent,
     AdminPelangganComponent,
+    AdminPackageComponent,
+    AdminKomoditasComponent,
   ],
   imports: [
     BrowserModule,

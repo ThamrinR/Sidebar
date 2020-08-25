@@ -1,1 +1,30 @@
-<p>admin-user works!</p>
+<div class="padding bg-primary-dark admin-card">
+  <h5 class="text-center mt-2 bg-primary-dark">Daftar Pengguna</h5>
+    <button class="btn btn-outline-green btn-square margin-bottom" [routerLink]="'/admin/user/add'">
+      <fa-icon [icon]="faPlus"></fa-icon>
+      Tambah
+    </button>
+    <table class="table text-black font-weight-normal">
+      <thead>
+        <tr class="text-center ">
+          <th scope="col">Nama Pengguna</th>
+          <th scope="col">Hak Akses</th>
+          <th scope="col">Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of akuns">
+          <td>{{data.username}}</td>
+          <td>{{data.hak_akses}}</td>
+          <td class="text-center">
+            <button class="btn btn-outline-warning btn-square btn-crud">
+              <fa-icon [icon]="faEdit"></fa-icon>
+            </button>
+            <button class="btn btn-outline-danger btn-square btn-crud" (click)="deleteUser(data.id_user)">
+              <fa-icon [icon]="faTrash"></fa-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

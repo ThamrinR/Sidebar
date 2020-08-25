@@ -4,6 +4,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LoginComponent } from './login/login.component';
 import { AdminUserComponent } from './admin-user/admin-user.component';
 import { AdminPelangganComponent } from './admin-pelanggan/admin-pelanggan.component';
+import { AdminPackageComponent } from './admin-package/admin-package.component';
+import { AdminKomoditasComponent } from './admin-komoditas/admin-komoditas.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,12 @@ const routes: Routes = [
       },
       {
         path:"pelanggan",component:AdminPelangganComponent
+      },
+      {
+        path:"package",component:AdminPackageComponent
+      },
+      {
+        path:"komoditas",component:AdminKomoditasComponent
       }
 
     ]
